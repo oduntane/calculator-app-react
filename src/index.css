@@ -48,6 +48,10 @@
     --font-weight-bold: 700;
 
     --spacing: 0.25rem;
+
+    --breakpoint-*: initial;
+    --breakpoint-tablet: 48rem;
+    --breakpoint-desktop: 90rem;
 }
 
 
