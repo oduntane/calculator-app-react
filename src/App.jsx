@@ -109,8 +109,10 @@ function App() {
                 </div>
             </div>
             {/* Display */}
-            <div className="w-[87.2%] max-w-[33.75rem] mx-auto p-6 tablet:p-8 rounded-[0.625rem] bg-gray-100 text-right dark:bg-navy-950 custom:bg-purple-900">
-                <span className="text-2 text-gray-900 dark:text-white custom:text-yellow-300">{formattedValue}</span>
+            <div className="w-[87.2%] max-w-[33.75rem] mx-auto p-6 tablet:p-8 rounded-[0.625rem] bg-gray-100 text-right dark:bg-navy-950 custom:bg-purple-900 overflow-x-clip">
+                <div className="overflow-x-scroll [&::-webkit-scrollbar]:hidden">
+                    <span className="text-2 text-gray-900 dark:text-white custom:text-yellow-300">{formattedValue}</span>
+                </div>
             </div>
             {/* Buttons */}
             <div className="w-[87.2%] max-w-[33.75rem]  mx-auto bg-gray-300 grid grid-cols-4 grid-flow-row auto-rows-[4rem] gap-4 rounded-[0.625rem] p-4 tablet:p-8 tablet:gap-6 dark:bg-navy-900 custom:bg-purple-900" onClick={handleClick}>
