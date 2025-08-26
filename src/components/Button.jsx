@@ -1,5 +1,5 @@
 
-export default function Button({type, children, className}) {
+export default function Button({type, children, className, ...props}) {
     let buttonStyle = ''
 
     switch(type) {
@@ -11,6 +11,6 @@ export default function Button({type, children, className}) {
 
     let cls = `flex justify-center items-center rounded-[0.3125rem] cursor-pointer ${buttonStyle} ${className}`
     return (
-        <button className={cls}>{children}</button>
+        <button className={cls} {...props}>{children}</button>
     )
 }
