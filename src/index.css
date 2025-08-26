@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 :root {
     font-size: 16px;
 }
@@ -93,6 +94,6 @@
     }
 }
 
-@custom-variant dark (&:where(.dark, .dark *))
+@custom-variant dark (&:where(.dark, .dark *));
 
-@custom-variant custom (&:where(.custom, .custom *))
+@custom-variant custom (&:where(.custom, .custom *));
