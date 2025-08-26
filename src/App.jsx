@@ -3,19 +3,22 @@ import ThemeToggleButton from "./components/ThemeToggleButton"
 
 function App() {
     return (
-        <div role="application" className="font-serif font-bold bg-gray-200 min-h-dvh py-8 flex flex-col gap-6 justify-center dark:bg-navy-850">
-            {/* <h1 className="sr-only">Calculator App</h1> */}
+        <div role="application" className="font-serif font-bold bg-gray-200 min-h-dvh py-8 flex flex-col gap-6 justify-center dark:bg-navy-850 custom:bg-purple-950">
+            <h1 className="sr-only">Calculator App</h1>
+            {/* Header */}
             <div className="w-[87.2%] max-w-[33.75rem] mx-auto flex justify-between">
-                <span role="presentation" className="text-3 text-gray-900 self-end dark:text-white">calc</span>
+                <span role="presentation" className="text-3 text-gray-900 self-end dark:text-white custom:text-yellow-300">calc</span>
                 <div className="inline-flex gap-4 items-end">
-                    <span className="text-6 text-gray-900 pb-2 dark:text-white">THEME</span>
+                    <span className="text-6 text-gray-900 pb-2 dark:text-white custom:text-yellow-300">THEME</span>
                     <ThemeToggleButton/>
                 </div>
             </div>
-            <div className="w-[87.2%] max-w-[33.75rem] mx-auto p-6 tablet:p-8 rounded-[0.625rem] bg-gray-100 text-right dark:bg-navy-950">
-                <span className="text-2 text-gray-900 dark:text-white">399,981</span>
+            {/* Display */}
+            <div className="w-[87.2%] max-w-[33.75rem] mx-auto p-6 tablet:p-8 rounded-[0.625rem] bg-gray-100 text-right dark:bg-navy-950 custom:bg-purple-900">
+                <span className="text-2 text-gray-900 dark:text-white custom:text-yellow-300">399,981</span>
             </div>
-            <div className="w-[87.2%] max-w-[33.75rem]  mx-auto bg-gray-300 grid grid-cols-4 grid-flow-row auto-rows-[4rem] gap-4 rounded-[0.625rem] p-4 tablet:p-8 tablet:gap-6 dark:bg-navy-900">
+            {/* Buttons */}
+            <div className="w-[87.2%] max-w-[33.75rem]  mx-auto bg-gray-300 grid grid-cols-4 grid-flow-row auto-rows-[4rem] gap-4 rounded-[0.625rem] p-4 tablet:p-8 tablet:gap-6 dark:bg-navy-900 custom:bg-purple-900">
                 <Button type="primary">7</Button>
                 <Button type="primary">8</Button>
                 <Button type="primary">9</Button>
